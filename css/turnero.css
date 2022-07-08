@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+  position: sticky;
+  top: 0;
+  height: 200px;
+  width:100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 20px;
+  
+}
+.header{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  background-color:#004aad;
+  font-style:normal;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+ }
+
+ .nombre_logo{
+  width: 40%;
+ }
+ .logo{
+  border-radius: 50%;
+ }
+
+ .redes{
+  order: 1;
+ }
+ .header h1{
+  font-family:Arial, Helvetica, sans-serif
+  font-weight: bold;
+ }
+   /* Menu Desplegable*/
+  .navegacion{
+    width: 800px;
+    margin: 30px auto;
+    background: #004aad;
+  }
+  
+  .navegacion ul{
+    list-style: none;
+  }
+  
+  .menu > li{
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color:rgb(240, 254, 255) ;
+    font-family: 'Open sans';
+    text-decoration: none;
+  }
+  
+  .menu li a:hover{
+    color: white;
+    transition: all .3s;
+  }
+  
+  /* Submenu*/
+  
+  .submenu{
+    position: absolute;
+    background: black;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+  }
+  
+  .submenu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none;
+  }
+  
+  .menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  
+  .footer{
+    background-color:#004aad;
+    font-style:normal;
+    font-weight: bold;
+    color: white;
+  }
+
+  .turnos{
+    background-color: rgb(130, 180, 221);
+    
+    text-align: center;
+    
+   }
+
+     /* FOOTER*/
+
+     .footer{
+      background-color:#004aad;
+      font-style:normal;
+      font-weight: bold;
+      color: white;
+      font-size: 15px;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-top: 20px;
+    }
+    .footer_titulo{
+      font-size: 20px;
+    }
+  
