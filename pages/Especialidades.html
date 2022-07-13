@@ -5,14 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Especialidades</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"/>
     <link rel="stylesheet" href="../css/especialidades.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
 </head>
 <body>
     <div id="main">
     
         <header class="header">
 
-          <div>
+          <div class="logo">
             <a title="Inicio" href="index.html"><img class="logo" src="../media/logo.PNG"
                 width="125"
                 height="125"
@@ -30,29 +37,41 @@
             <img src="../media/facebook.png" width="40" height="40" alt="Facebook" />
           </div>
         </div>
+    <div>
+        <nav id="barra" class="navbar navbar-expand-lg bg-light fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./Quienes_Somos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Quienes Somos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./Quienes_Somos.html#sobre_nosotros">Sobre Nosotros</a></li>
+                    <li><a class="dropdown-item" href="./Quienes_Somos.html#vision">Visión</a></li>
+                    <li><a class="dropdown-item" href="./Quienes_Somos.html#mision">Misión</a></li>
+                    <li><a class="dropdown-item" href="./Quienes_Somos.html#valoresok">Valores</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./Especialidades.html">Especialidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Turnos Online.html">Turnos Online</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Contacto.html">Contacto</a>
+                </li>
+                          </ul>
+            </div>
+          </div>
+        </nav>
+        </div>
     
-
-    <nav class="navegacion">
-      <ul class="menu">
-        <li>
-          <a href="../estructura/pages/Quienes_Somos.html">Quienes somos</a>
-          <ul class="submenu">
-            <li>
-              <a href="#sobre_nosotros"></a> Sobre
-              Nosotros
-            </li>
-            <li>  
-              <a href="../estructura/Quienes Somos.html#vision"></a> Visión
-            </li>
-            <li><a href="Quienes Somos.html#mision"></a> Misión</li>
-            <li><a href="Quienes Somos.html#valores"></a> Valores</li>
-          </ul>
-        </li>
-        <li><a href="Especialidades.html">Especialidades</a></li>
-        <li><a href="Turnos Online.html">Turnos Online</a></li>
-        <li><a href="Contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
         </header>
 
     <h1 class="animated-shadow">Especialidades</h1>
@@ -117,21 +136,27 @@
     
 </section>
 <article class="boton">
-    <div class="boton_turnero">
-      <a href="../estructura/pages/Turnos Online.html" style="text-decoration:none">Turnos Online</a>
-    </div>
+  <div>
+    <article class="container m-auto mb-2">
+      <a class="btn btn-primary btn-lg" href="./pages/Turnos Online.html" role="button">Turnos Online</a> 
+    </article>
+
+  </div>
   </article>
   
   <footer class="footer" >
-      <div class="nombre_logo">
-          <h1>CONSULTORIOS MÉDICOS URCA S.R.L.</h1>
-     
-      
-              <a title="Inicio" href="index.html"
-                ><img src="../media/logo.PNG" width="125" height="125" alt="Logo"
+
+    <div class="row">
+      <div class="col-lg">
+        <div class="nombre_logo">
+          <h3>CONSULTORIOS MÉDICOS URCA S.R.L.</h3>
+            <a title="Inicio" href="index.html">
+            <img src="../media/logo.PNG" width="125" height="125" alt="Logo"
               /></a>
       </div>
-      <div>
+      </div>
+      <div class="col-lg">
+        <div>
           <h6 class="footer_titulo">¿Donde encontrarnos?</h6>
           <p>Menendez Pidal 4008 B° Urca</p>
       
@@ -144,25 +169,37 @@
               height="75"
               alt="Ubicacion"/></a>
         </div>
-      
-      
-      <div>
+      </div>
+      <div class="col-lg">
         <h6 class="footer_titulo">Horarios de Atención</h6>
-        <br>
-        <p>Lunes a viernes de 8:30 hs a 13:30 hs y de 17:00 hs a 20:00 hs</p>
+                      <br>
+                      <p>Lunes a viernes de 8:30 hs a 13:30 hs y de 17:00 hs a 20:00 hs</p>
       </div>
-      
-      <div>
+      <div class="col-lg">
         <h6 class="footer_titulo">Turnos al:</h6>
-        <p>(0351) 4823372</p>
+                      <p>(0351) 4823372</p>
       </div>
-      <!-- Link a Formulario de Google para postulación -->
-      <div>
-        <br>
+      <div class="col-lg">
+        <!-- Link a Formulario de Google para postulación -->
         <p>Sumate a nuestro equipo de profesionales</p>
+        <button type="button" class="btn btn-primary btn-sm">Ingresár CV</button>
       </div>
-    
+      <div class="col-lg">
+        <p>Seguinos en nuestras redes</p>
+          <div class="redessociales">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+          </div>
+      </div>
+    </div>
+  
   </footer>
 </div>
+<!-- JavaScript Bundle with Popper -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+crossorigin="anonymous"
+></script>
 </body>
 </html>
